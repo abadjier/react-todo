@@ -5,6 +5,8 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 // using object destructuring above, accomplishes the same as this:
 //var Route = require('react-router').Route;
 
+var TodoApp = require('TodoApp');
+
 
 // load foundation
 $(document).foundation();
@@ -13,6 +15,6 @@ $(document).foundation();
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
- <p>Boilerplate 3 project</p>, 
+  <TodoApp/>, 
   document.getElementById('app')     
 );
