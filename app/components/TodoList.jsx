@@ -11,7 +11,7 @@ var TodoList = React.createClass({
         return (
           // when iterating over array and generating multiple instances of a component, need to give them unique key prop
           // used internally by React to keep track of each component
-          <Todo key={todo.id} {...todo}/> // the spread operater creates a prop for every property on the object
+          <Todo key={todo.id} {...todo} onToggle={this.props.onToggle}/> // the spread operater creates a prop for every property on the object
         );
       });
     };
